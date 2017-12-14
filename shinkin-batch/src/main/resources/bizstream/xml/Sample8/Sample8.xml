@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!-- XML file created by biz-Stream Designer -->
+<!-- Copyright by Brainsellers.com Corporation -->
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:pdf="http://www.brainsellers.com/schema" xmlns:svg="http://www.brainsellers.com/schema" xmlns:bs="http://www.brainsellers.com/schema" xmlns:form="http://www.brainsellers.com/schema">
+    <bs:datasource-master-set>
+        <bs:datasource-master master-name="pagedata">
+            <bs:application-data-master-reference master-reference="page"/>
+        </bs:datasource-master>
+        <bs:datasource-master master-name="recodedata">
+            <bs:application-data-master-reference master-reference="record"/>
+        </bs:datasource-master>
+        <bs:application-data-resource-master master-name="hashtable-data"/>
+        <bs:application-data-resource-master master-name="record-data"/>
+        <bs:application-data-master master-name="record">
+            <bs:application-data-statement master-reference="record-data"/>
+        </bs:application-data-master>
+        <bs:application-data-master master-name="page">
+            <bs:application-data-statement master-reference="hashtable-data"/>
+        </bs:application-data-master>
+    </bs:datasource-master-set>
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="A4" page-height="296.479mm" page-width="209.507mm">
+            <fo:region-body/>            <fo:region-before extent="0mm"/>            <fo:region-after extent="0mm"/>            <fo:region-start extent="0mm"/>            <fo:region-end extent="0mm"/>        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="A4">
+        <fo:flow flow-name="xsl-region-body">
+            <bs:block-container master-reference="pagedata">
+                <bs:include href="${base-dir}/src/main/resources/bizstream/xml/Sample8/Sample8_layout1.xml"/>
+            </bs:block-container>
+        </fo:flow>
+    </fo:page-sequence>
+    <fo:page-sequence master-reference="A4">
+        <fo:flow flow-name="xsl-region-body">
+            <bs:block-container master-reference="pagedata">
+                <bs:include href="${base-dir}/src/main/resources/bizstream/xml/Sample8/Sample8_layout2.xml"/>
+            </bs:block-container>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

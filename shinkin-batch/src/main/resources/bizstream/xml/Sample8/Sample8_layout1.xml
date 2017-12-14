@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!-- XML file created by biz-Stream Designer -->
+<!-- Copyright by Brainsellers.com Corporation -->
+<Layout Width="595.276" Height="841.89" Unit="dot" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:bs="http://www.brainsellers.com/schema" xmlns:svg="http://www.brainsellers.com/schema" xmlns:form="http://www.brainsellers.com/schema" xmlns:pdf="http://www.brainsellers.com/schema">
+    <Label Height="31.521" X="249.071" Y="776.531" Horizon="right" Font="mspgothic" FontSize="20" FontStyle="BOLD" Narrow="none">見積書</Label>
+    <Label Width="96.222" Height="18.012" X="463.369" Y="737.623" Horizon="right" Font="dfpheigow3" FontSize="11" Narrow="none">2002/09/25</Label>
+    <Label Height="14.457" X="411.369" Y="721.27" Horizon="right" Font="dfpheigow3" FontSize="11" Narrow="none">（見積書番号：BZS-E-0226）</Label>
+    <Label Width="189.222" Height="13.746" X="370.369" Y="649.459" Horizon="right" Font="dfpheigow3" FontSize="11" Narrow="none">東京都港区XX-XX-XX</Label>
+    <Label Width="188.222" Height="11.613" X="371.369" Y="635.95" Horizon="right" Font="dfpheigow3" FontSize="11" Narrow="none">ブレインセラーズ・ドットコム株式会社</Label>
+    <Label Width="87.69" Height="11.613" X="373.783" Y="622.441" Horizon="right" Font="dfpheigow3" FontSize="10" Narrow="none">代表取締役</Label>
+    <Label Width="96.222" Height="11.613" X="463.369" Y="622.441" Horizon="right" Font="dfpheigow3" FontSize="11" Narrow="none">渡邉　治巳</Label>
+    <Label Width="87.69" Height="11.613" X="373.783" Y="608.932" Horizon="right" Font="dfpheigow3" Narrow="none">Tel 03-XXXX-XXXX</Label>
+    <multi-text x="463.369" y="608.932" cell-width="96.222" cell-height="11.613" text-align="right" line-align="bottom" font-family="dfpheigow3" section-indent="0" text-indent="0">Fax 03-XXXX-XXXX</multi-text>
+    <Label Width="82.743" Height="12.223" X="36.013" Y="588.803" Font="dfpheigow3" FontSize="9" Narrow="none">（１）受  渡  期  限　　：　　別途お打合せ</Label>
+    <Label Width="61.383" Height="11.613" X="36.013" Y="575.904" Font="dfpheigow3" FontSize="9" Narrow="none">（２）受  渡  条  件　　：　　貴社御指定場所</Label>
+    <Label Width="61.383" Height="11.613" X="36.013" Y="562.395" Font="dfpheigow3" FontSize="9" Narrow="none">（３）代金支払条件　　  ：　　納入月末日締翌月末日現金振込</Label>
+    <Label Width="61.383" Height="11.613" X="36.013" Y="548.886" Font="dfpheigow3" FontSize="9" Narrow="none">（４）見積有効期限　　  ：　　2002年6月30日まで</Label>
+    <Label Width="61.383" Height="11.613" X="36.013" Y="535.377" Font="dfpheigow3" FontSize="9" Narrow="none">（５）特  記  事  項　　：　　詳細仕様は別途打合せ</Label>
+    <GroupAlignment Width="281" Height="23" X="89" Y="692.89" LineSpace="5">
+        <Label Name="company" Height="18.723" Font="dfpheigow3" FontSize="16" Narrow="none">　　　</Label>
+        <Label Height="18.723" Font="dfpheigow3" FontSize="14" Narrow="none">御中</Label>
+    </GroupAlignment>
+    <fo:table x="55" y="497.89" max-rows="10" number-tables-repeated="1">
+        <fo:table-column column-width="45.06"/>
+        <fo:table-column column-width="128.465"/>
+        <fo:table-column column-width="92.569"/>
+        <fo:table-column column-width="92.569"/>
+        <fo:table-column column-width="92.569"/>
+        <fo:table-header>
+            <fo:table-row line-height="25.255" border-width="0.1" border-color="0,0,0" background-color="204,204,255">
+                <fo:table-cell number-columns-spanned="">
+                    <Label Width="42.948" Height="27.366" Y="-2.112" Horizon="center" FontSize="12">コード</Label>
+                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Label Width="126.353" Height="25.255" Horizon="center" FontSize="12">製　品　名</Label>
+                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Label Width="92.569" Height="25.255" Horizon="center" FontSize="12">数　量</Label>
+                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Label Width="92.569" Height="25.255" Horizon="center" FontSize="12">単　価</Label>
+                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Label Width="92.569" Height="25.255" Horizon="center" FontSize="12">金　額</Label>
+                </fo:table-cell>
+            </fo:table-row>
+        </fo:table-header>
+        <fo:table-body master-reference="recodedata">
+            <fo:table-row line-height="25.255" border-width="0.1" border-color="0,0,0">
+                <fo:table-cell number-columns-spanned="">
+                    <Label Name="製品コード" Horizon="right" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Label Name="製品名" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Currency Name="数量" format="#,##0" Horizon="right" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Currency Name="単価" format="#,##0" Horizon="right" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell number-columns-spanned="">
+                    <Currency Name="金額" format="#,##0" Horizon="right" FontSize="10"/>                </fo:table-cell>
+            </fo:table-row>
+        </fo:table-body>
+    </fo:table>
+</Layout>

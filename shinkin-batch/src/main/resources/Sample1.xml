@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML file created by biz-Stream Designer -->
+<!-- Copyright by Brainsellers.com Corporation -->
+<Layout Name="sample1" Width="160" Height="110" X="5" Y="5" Unit="px" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:bs="http://www.brainsellers.com/schema" xmlns:svg="http://www.brainsellers.com/schema" xmlns:form="http://www.brainsellers.com/schema" xmlns:pdf="http://www.brainsellers.com/schema">
+    <Square Width="150" Height="100" LineColor="14,0,176"/>
+
+    <GroupAlignment Width="150" Height="100" Horizon="center" Vertical="center" Vector="vertical" LineSpace="10">
+        <Label Name="company" FontColor="0,0,255" FontStyle="BOLD"/>
+        <Label Name="address" FontSize="7" FontStyle="BOLD"/>
+        <GroupAlignment Width="150" Horizon="center" Vector="horizon" LineSpace="10">
+            <Label Name="phone" FontSize="7" FontStyle="BOLD"/>
+            <Label Name="fax" FontSize="7" FontStyle="BOLD"/>
+        </GroupAlignment>
+    </GroupAlignment>
+</Layout>

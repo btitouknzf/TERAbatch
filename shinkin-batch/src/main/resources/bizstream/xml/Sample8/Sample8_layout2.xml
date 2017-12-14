@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<!-- XML file created by biz-Stream Designer -->
+<!-- Copyright by Brainsellers.com Corporation -->
+<Layout Width="595.276" Height="841.89" Unit="pt" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:bs="http://www.brainsellers.com/schema" xmlns:svg="http://www.brainsellers.com/schema" xmlns:form="http://www.brainsellers.com/schema" xmlns:pdf="http://www.brainsellers.com/schema">
+    <fo:table x="62" y="702.89" max-rows="20" number-tables-repeated="3" no-data-disabled="false">
+        <fo:table-column column-width="45.06"/>
+        <fo:table-column column-width="128.465"/>
+        <fo:table-column column-width="92.569"/>
+        <fo:table-column column-width="92.569"/>
+        <fo:table-column column-width="92.569"/>
+        <fo:table-header>
+            <fo:table-row line-height="25.255" border-width="0.1" border-color="0,0,0" background-color="204,204,255">
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label FontSize="12">コード</Label>
+                </fo:table-cell>
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label FontSize="12">製　品　名</Label>
+                </fo:table-cell>
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label FontSize="12">数　量</Label>
+                </fo:table-cell>
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label FontSize="12">単　価</Label>
+                </fo:table-cell>
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label FontSize="12">金　額</Label>
+                </fo:table-cell>
+            </fo:table-row>
+        </fo:table-header>
+        <fo:table-body master-reference="recodedata">
+            <fo:table-row line-height="25.255" border-width="0.1" border-color="0,0,0">
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label Name="製品コード" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell text-align="center" number-columns-spanned="">
+                    <Label Name="製品名" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell text-align="right" number-columns-spanned="">
+                    <Currency Name="数量" format="#,##0" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell text-align="right" number-columns-spanned="">
+                    <Currency Name="単価" format="#,##0" FontSize="10"/>                </fo:table-cell>
+                <fo:table-cell text-align="right" number-columns-spanned="">
+                    <Currency Name="金額" format="#,##0" FontSize="10"/>                </fo:table-cell>
+            </fo:table-row>
+        </fo:table-body>
+    </fo:table>
+</Layout>

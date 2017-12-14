@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jp.co.nttdata.shinkin.batch.sample01.Sample01Repository">
+
+    <select id="countJobs" resultType="java.lang.Integer">
+        <![CDATA[
+        SELECT
+            COUNT(job_seq_id)
+        FROM
+            batch_job_request
+        ]]>
+    </select>
+</mapper>
+
